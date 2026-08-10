@@ -1,0 +1,15 @@
+QuestaSim vlog 10.6c Compiler 2017.07 Jul 25 2017
+Start time: 20:34:51 on Aug 10,2026
+vlog -sv "+acc" "+cover" "+fcover" -l log_file.log top.sv 
+-- Compiling package test_pkg
+-- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+** Note: (vlog-2286) package.svh(4): Using implicit +incdir+/tools/mentor/questasim_10.6c/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+-- Compiling interface fifo_if
+-- Compiling module syn_fifo
+-- Compiling module top
+-- Importing package test_pkg
+
+Top level modules:
+	top
+End time: 20:34:52 on Aug 10,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

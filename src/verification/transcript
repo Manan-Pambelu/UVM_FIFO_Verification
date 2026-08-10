@@ -1,0 +1,1118 @@
+# vsim -c top 
+# Start time: 14:58:39 on Aug 10,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.fifo_if(fast)
+# Loading mtiUvm.uvm_pkg
+# Loading work.test_pkg(fast)
+# Loading work.top(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading /tools/mentor/questasim_10.6c/questasim/uvm-1.1d/linux/uvm_dpi.so
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(215) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(217) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test regression_test...
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------
+# Name                       Type                        Size  Value
+# ------------------------------------------------------------------
+# uvm_test_top               regression_test             -     @471 
+#   env_h                    fifo_env                    -     @478 
+#     act_agt_h              fifo_act_agent              -     @486 
+#       act_mon_h            fifo_act_monitor            -     @769 
+#         fifo_mon_aport     uvm_analysis_port           -     @776 
+#       drv_h                fifo_driver                 -     @746 
+#         rsp_port           uvm_analysis_port           -     @761 
+#         seq_item_port      uvm_seq_item_pull_port      -     @753 
+#       sqr_h                uvm_sequencer               -     @637 
+#         rsp_export         uvm_analysis_export         -     @644 
+#         seq_item_export    uvm_seq_item_pull_imp       -     @738 
+#         arbitration_queue  array                       0     -    
+#         lock_queue         array                       0     -    
+#         num_last_reqs      integral                    32    'd1  
+#         num_last_rsps      integral                    32    'd1  
+#     pas_agt_h              fifo_pas_agent              -     @493 
+#       pas_mon_h            fifo_pas_monitor            -     @792 
+#         pas_mon_aport      uvm_analysis_port           -     @799 
+#     scb_h                  fifo_scoreboard             -     @500 
+#       inp_fifo             uvm_tlm_analysis_fifo #(T)  -     @507 
+#         analysis_export    uvm_analysis_imp            -     @546 
+#         get_ap             uvm_analysis_port           -     @538 
+#         get_peek_export    uvm_get_peek_imp            -     @522 
+#         put_ap             uvm_analysis_port           -     @530 
+#         put_export         uvm_put_imp                 -     @514 
+#       out_fifo             uvm_tlm_analysis_fifo #(T)  -     @554 
+#         analysis_export    uvm_analysis_imp            -     @593 
+#         get_ap             uvm_analysis_port           -     @585 
+#         get_peek_export    uvm_get_peek_imp            -     @569 
+#         put_ap             uvm_analysis_port           -     @577 
+#         put_export         uvm_put_imp                 -     @561 
+#     sub_h                  fifo_subscriber             -     @613 
+#       analysis_imp         uvm_analysis_imp            -     @620 
+#       cov_port             uvm_analysis_imp            -     @628 
+# ------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 0: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:1 | wr_cs: 1 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 3 |
+# 
+# UVM_INFO pas_monitor.sv(33) @ 5: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: x | wr_cs: x | rd_cs: x | wr_en: x | rd_en: x | data_in: 3 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 5: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 5: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @871 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 5: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 5: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:1 | wr_cs: 0 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 5 |
+# 
+# UVM_INFO pas_monitor.sv(33) @ 15: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 1 | wr_cs: 0 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 5 | data_out: 0 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 15: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b1  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 15: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @884 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 15: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 15: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 7 |
+# 
+# assertion passed when reset is 1 full is 0
+# assertion passed when reset is 1 empty is 1
+# UVM_INFO pas_monitor.sv(33) @ 25: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 7 | data_out: 0 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 25: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h7  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 25: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @896 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h7  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 25: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 25: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 5 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 35: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 5 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 35: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 35: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @908 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 35: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 35: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 3 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 45: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 3 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 45: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 45: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @920 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 45: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 45: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 0 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 55: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 0 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 55: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 55: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @932 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 55: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 55: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 0 |
+# 
+# assertion failed when write enable and chip select is high data_in is low
+# UVM_INFO pas_monitor.sv(33) @ 65: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 0 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 65: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 65: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @944 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 65: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 65: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 2 |
+# 
+# assertion failed when write enable and chip select is high data_in is low
+# UVM_INFO pas_monitor.sv(33) @ 75: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 2 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 75: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 75: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @956 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 75: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 75: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 1 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 85: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 1 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 85: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h1  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 85: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @968 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h1  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 85: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 85: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 7 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 95: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 7 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 95: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h7  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 95: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @980 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h7  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 95: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 95: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 2 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 105: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 2 | data_out: 0 | full: 1 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 105: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 105: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @992 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 105: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 105: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 6 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 115: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 1 | rd_cs: 0 | wr_en: 1 | rd_en: 0 | data_in: 6 | data_out: 0 | full: 1 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 115: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b1  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b1  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 115: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1004
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 115: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 115: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 4 |
+# 
+# assertion passed when write enable and chip select is high data_in is high
+# UVM_INFO pas_monitor.sv(33) @ 125: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 4 | data_out: 0 | full: 1 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 125: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h4  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 125: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1016
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h4  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b1  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 125: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 125: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 |
+# 
+# UVM_INFO pas_monitor.sv(33) @ 135: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 | data_out: 6 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 135: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 135: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1028
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h6  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_ERROR scoreboard.sv(71) @ 135: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# FAIL
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 135: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 145: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 | data_out: 5 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 145: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h5  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 145: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1040
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h5  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 145: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 145: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 155: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 | data_out: 3 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 155: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h3  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 155: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1052
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h3  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 155: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 155: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 165: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 165: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 165: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1064
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 165: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 165: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 |
+# 
+# UVM_INFO pas_monitor.sv(33) @ 175: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 | data_out: 0 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 175: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 175: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1076
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 175: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 175: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 |
+# 
+# UVM_INFO pas_monitor.sv(33) @ 185: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 5 | data_out: 2 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 185: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h2  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 185: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1088
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h5  
+#   data_out  integral  3     'h2  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 185: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 185: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 3 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# assertion passed when read enable and chip select is high data_out is high
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 195: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 3 | data_out: 1 | full: 0 | empty: 0
+# UVM_INFO scoreboard.sv(62) @ 195: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h1  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 195: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1100
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h3  
+#   data_out  integral  3     'h1  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b0  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 195: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 195: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 205: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 | data_out: 7 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 205: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 205: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1112
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(67) @ 205: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# PASS
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 205: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 215: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 2 | data_out: 7 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 215: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 215: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1124
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h2  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_ERROR scoreboard.sv(71) @ 215: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# FAIL
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 215: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 225: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 6 | data_out: 7 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 225: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 225: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1136
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h6  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_ERROR scoreboard.sv(71) @ 225: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# FAIL
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO driver.sv(30) @ 225: uvm_test_top.env_h.act_agt_h.drv_h [fifo_driver] 
+# Driving -> reset:0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 0 |
+# 
+# assertion passed when read enable and chip select is high data_out is high
+# UVM_INFO pas_monitor.sv(33) @ 235: uvm_test_top.env_h.pas_agt_h.pas_mon_h [fifo_pas_monitor] pas_mon -> rst: 0 | wr_cs: 0 | rd_cs: 1 | wr_en: 0 | rd_en: 1 | data_in: 0 | data_out: 7 | full: 0 | empty: 1
+# UVM_INFO scoreboard.sv(62) @ 235: uvm_test_top.env_h.scb_h [SCOREBOARD REF] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# ref_packet  trans     -     @601 
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b1  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b1  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h0  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_INFO scoreboard.sv(63) @ 235: uvm_test_top.env_h.scb_h [SCOREBOARD DUT] SCOREBOARD 
+#  ---------------------------------
+# Name        Type      Size  Value
+# ---------------------------------
+# tx          trans     -     @1148
+#   wr_cs     integral  1     'b0  
+#   rd_cs     integral  1     'b0  
+#   wr_en     integral  1     'b0  
+#   rd_en     integral  1     'b0  
+#   reset     integral  1     'b0  
+#   data_in   integral  3     'h0  
+#   data_out  integral  3     'h7  
+#   full      integral  1     'b0  
+#   empty     integral  1     'b1  
+# ---------------------------------
+# 
+# UVM_ERROR scoreboard.sv(71) @ 235: uvm_test_top.env_h.scb_h [fifo_scoreboard] 
+# ------------------------------------------------------------------------------------
+# FAIL
+# ---------------------------------------------------------------------------------
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1268) @ 235: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO subscriber.sv(51) @ 235: uvm_test_top.env_h.sub_h [fifo_subscriber] FIFO coverage is ----> 89.00
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  122
+# UVM_WARNING :    0
+# UVM_ERROR :    4
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD DUT]    24
+# [SCOREBOARD REF]    24
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# [fifo_driver]    24
+# [fifo_pas_monitor]    24
+# [fifo_scoreboard]    24
+# [fifo_subscriber]     1
+# ** Note: $finish    : /tools/mentor/questasim_10.6c/questasim/linux/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 235 ns  Iteration: 62  Instance: /top
+# End time: 14:58:46 on Aug 10,2026, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 0

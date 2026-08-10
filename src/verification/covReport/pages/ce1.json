@@ -1,0 +1,210 @@
+var g_data = {
+e6:[{dummy:0}
+,{anchor:'cvg38',cr:'c',items:[{s:'3',x:'FE',z:'((wr_cs && wr_en) && ~full)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'wr_cs',c:'g',r:'',i:''}
+,{z:'wr_en',c:'g',r:'',i:''}
+,{z:'full',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'wr_cs_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'wr_cs_1',h1:'1',t:'e',c1:'(~full && wr_en)'}
+,{n:'3',z:'wr_en_0',h1:'1',t:'e',c1:'wr_cs'}
+,{n:'4',z:'wr_en_1',h1:'1',t:'e',c1:'(~full && wr_cs)'}
+,{n:'5',z:'full_0',h1:'1',t:'e',c1:'(wr_cs && wr_en)'}
+,{n:'6',z:'full_1',h1:'1',t:'e',c1:'(wr_cs && wr_en)'}
+]}
+,{anchor:'cvg40',cr:'c',items:[{s:'3',x:'FE',z:'((rd_cs && rd_en) && ~empty)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'rd_cs',c:'g',r:'',i:''}
+,{z:'rd_en',c:'g',r:'',i:''}
+,{z:'empty',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'rd_cs_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'rd_cs_1',h1:'1',t:'e',c1:'(~empty && rd_en)'}
+,{n:'3',z:'rd_en_0',h1:'1',t:'e',c1:'rd_cs'}
+,{n:'4',z:'rd_en_1',h1:'1',t:'e',c1:'(~empty && rd_cs)'}
+,{n:'5',z:'empty_0',h1:'1',t:'e',c1:'(rd_cs && rd_en)'}
+,{n:'6',z:'empty_1',h1:'1',t:'e',c1:'(rd_cs && rd_en)'}
+]}
+],
+c6:[{dummy:0}
+,{anchor:'cvg42',cr:'c',items:[{s:'3',x:'FC',z:'(rd_valid && ~wr_valid)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'rd_valid',c:'g',r:'',i:''}
+,{z:'wr_valid',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'rd_valid_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'rd_valid_1',h1:'1',t:'c',c1:'~wr_valid'}
+,{n:'3',z:'wr_valid_0',h1:'1',t:'c',c1:'rd_valid'}
+,{n:'4',z:'wr_valid_1',h1:'1',t:'c',c1:'rd_valid'}
+]}
+,{anchor:'cvg44',cr:'c',items:[{s:'3',x:'FC',z:'(wr_valid && ~rd_valid)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'wr_valid',c:'g',r:'',i:''}
+,{z:'rd_valid',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'wr_valid_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'wr_valid_1',h1:'1',t:'c',c1:'~rd_valid'}
+,{n:'3',z:'rd_valid_0',h1:'1',t:'c',c1:'wr_valid'}
+,{n:'4',z:'rd_valid_1',h1:'1',t:'c',c1:'wr_valid'}
+]}
+],
+e32:[{dummy:0}
+,{anchor:'cvg38',cr:'c',items:[{s:'3',x:'FE',z:'((wr_cs && wr_en) && ~full)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'wr_cs',c:'g',r:'',i:''}
+,{z:'wr_en',c:'g',r:'',i:''}
+,{z:'full',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'wr_cs_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'wr_cs_1',h1:'1',t:'e',c1:'(~full && wr_en)'}
+,{n:'3',z:'wr_en_0',h1:'1',t:'e',c1:'wr_cs'}
+,{n:'4',z:'wr_en_1',h1:'1',t:'e',c1:'(~full && wr_cs)'}
+,{n:'5',z:'full_0',h1:'1',t:'e',c1:'(wr_cs && wr_en)'}
+,{n:'6',z:'full_1',h1:'1',t:'e',c1:'(wr_cs && wr_en)'}
+]}
+,{anchor:'cvg40',cr:'c',items:[{s:'3',x:'FE',z:'((rd_cs && rd_en) && ~empty)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'rd_cs',c:'g',r:'',i:''}
+,{z:'rd_en',c:'g',r:'',i:''}
+,{z:'empty',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'rd_cs_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'rd_cs_1',h1:'1',t:'e',c1:'(~empty && rd_en)'}
+,{n:'3',z:'rd_en_0',h1:'1',t:'e',c1:'rd_cs'}
+,{n:'4',z:'rd_en_1',h1:'1',t:'e',c1:'(~empty && rd_cs)'}
+,{n:'5',z:'empty_0',h1:'1',t:'e',c1:'(rd_cs && rd_en)'}
+,{n:'6',z:'empty_1',h1:'1',t:'e',c1:'(rd_cs && rd_en)'}
+]}
+],
+c32:[{dummy:0}
+,{anchor:'cvg42',cr:'c',items:[{s:'3',x:'FC',z:'(rd_valid && ~wr_valid)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'rd_valid',c:'g',r:'',i:''}
+,{z:'wr_valid',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'rd_valid_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'rd_valid_1',h1:'1',t:'c',c1:'~wr_valid'}
+,{n:'3',z:'wr_valid_0',h1:'1',t:'c',c1:'rd_valid'}
+,{n:'4',z:'wr_valid_1',h1:'1',t:'c',c1:'rd_valid'}
+]}
+,{anchor:'cvg44',cr:'c',items:[{s:'3',x:'FC',z:'(wr_valid && ~rd_valid)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'wr_valid',c:'g',r:'',i:''}
+,{z:'rd_valid',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'wr_valid_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'wr_valid_1',h1:'1',t:'c',c1:'~rd_valid'}
+,{n:'3',z:'rd_valid_0',h1:'1',t:'c',c1:'wr_valid'}
+,{n:'4',z:'rd_valid_1',h1:'1',t:'c',c1:'wr_valid'}
+]}
+],
+e1042:[{dummy:0}
+,{anchor:'cvg1053',cr:'c',items:[{s:'3',x:'FE',z:'(this.inp_packet.wr_en && this.inp_packet.wr_cs && (status_cnt < 8))',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'this.inp_packet.wr_en',c:'g',r:'',i:''}
+,{z:'this.inp_packet.wr_cs',c:'g',r:'',i:''}
+,{z:'(status_cnt < 8)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'this.inp_packet.wr_en_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'this.inp_packet.wr_en_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_cs && (status_cnt < 8))'}
+,{n:'3',z:'this.inp_packet.wr_cs_0',h1:'1',t:'e',c1:'this.inp_packet.wr_en'}
+,{n:'4',z:'this.inp_packet.wr_cs_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && (status_cnt < 8))'}
+,{n:'5',z:'(status_cnt < 8)_0',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && this.inp_packet.wr_cs)'}
+,{n:'6',z:'(status_cnt < 8)_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && this.inp_packet.wr_cs)'}
+]}
+,{anchor:'cvg1055',cr:'c',items:[{s:'3',x:'FE',z:'(this.inp_packet.rd_en && this.inp_packet.rd_cs && (status_cnt > 0))',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'this.inp_packet.rd_en',c:'g',r:'',i:''}
+,{z:'this.inp_packet.rd_cs',c:'g',r:'',i:''}
+,{z:'(status_cnt > 0)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'this.inp_packet.rd_en_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'this.inp_packet.rd_en_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_cs && (status_cnt > 0))'}
+,{n:'3',z:'this.inp_packet.rd_cs_0',h1:'1',t:'e',c1:'this.inp_packet.rd_en'}
+,{n:'4',z:'this.inp_packet.rd_cs_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && (status_cnt > 0))'}
+,{n:'5',z:'(status_cnt > 0)_0',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && this.inp_packet.rd_cs)'}
+,{n:'6',z:'(status_cnt > 0)_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && this.inp_packet.rd_cs)'}
+]}
+],
+c1042:[{dummy:0}
+,{anchor:'cvg1057',items:[{s:'3',x:'FC',z:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty) && (this.ref_packet.full === this.out_packet.full))',c:'R',p:'33.33',d:'0',F:'1'}
+,{}
+,{z:'(this.ref_packet.data_out === this.out_packet.data_out)',c:'g',r:'',i:''}
+,{z:'(this.ref_packet.empty === this.out_packet.empty)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(this.ref_packet.full === this.out_packet.full)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(this.ref_packet.data_out === this.out_packet.data_out)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(this.ref_packet.data_out === this.out_packet.data_out)_1',h1:'1',t:'c',c1:'((this.ref_packet.empty === this.out_packet.empty) && (this.ref_packet.full === this.out_packet.full))'}
+,{n:'3',z:'(this.ref_packet.empty === this.out_packet.empty)_0',h1:'0',t:'c',c1:'(this.ref_packet.data_out === this.out_packet.data_out)'}
+,{n:'4',z:'(this.ref_packet.empty === this.out_packet.empty)_1',h1:'1',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.full === this.out_packet.full))'}
+,{n:'5',z:'(this.ref_packet.full === this.out_packet.full)_0',h1:'0',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty))'}
+,{n:'6',z:'(this.ref_packet.full === this.out_packet.full)_1',h1:'1',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty))'}
+]}
+,{anchor:'cvg1059',cr:'c',items:[{s:'3',x:'FC',z:'(write && read)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'write',c:'g',r:'',i:''}
+,{z:'read',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'write_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'write_1',h1:'1',t:'c',c1:'read'}
+,{n:'3',z:'read_0',h1:'1',t:'c',c1:'write'}
+,{n:'4',z:'read_1',h1:'1',t:'c',c1:'write'}
+]}
+],
+e1425:[{dummy:0}
+,{anchor:'cvg1436',cr:'c',items:[{s:'3',x:'FE',z:'(this.inp_packet.wr_en && this.inp_packet.wr_cs && (status_cnt < 8))',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'this.inp_packet.wr_en',c:'g',r:'',i:''}
+,{z:'this.inp_packet.wr_cs',c:'g',r:'',i:''}
+,{z:'(status_cnt < 8)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'this.inp_packet.wr_en_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'this.inp_packet.wr_en_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_cs && (status_cnt < 8))'}
+,{n:'3',z:'this.inp_packet.wr_cs_0',h1:'1',t:'e',c1:'this.inp_packet.wr_en'}
+,{n:'4',z:'this.inp_packet.wr_cs_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && (status_cnt < 8))'}
+,{n:'5',z:'(status_cnt < 8)_0',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && this.inp_packet.wr_cs)'}
+,{n:'6',z:'(status_cnt < 8)_1',h1:'1',t:'e',c1:'(this.inp_packet.wr_en && this.inp_packet.wr_cs)'}
+]}
+,{anchor:'cvg1438',cr:'c',items:[{s:'3',x:'FE',z:'(this.inp_packet.rd_en && this.inp_packet.rd_cs && (status_cnt > 0))',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'this.inp_packet.rd_en',c:'g',r:'',i:''}
+,{z:'this.inp_packet.rd_cs',c:'g',r:'',i:''}
+,{z:'(status_cnt > 0)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'this.inp_packet.rd_en_0',h1:'1',t:'e',c1:'-'}
+,{n:'2',z:'this.inp_packet.rd_en_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_cs && (status_cnt > 0))'}
+,{n:'3',z:'this.inp_packet.rd_cs_0',h1:'1',t:'e',c1:'this.inp_packet.rd_en'}
+,{n:'4',z:'this.inp_packet.rd_cs_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && (status_cnt > 0))'}
+,{n:'5',z:'(status_cnt > 0)_0',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && this.inp_packet.rd_cs)'}
+,{n:'6',z:'(status_cnt > 0)_1',h1:'1',t:'e',c1:'(this.inp_packet.rd_en && this.inp_packet.rd_cs)'}
+]}
+],
+c1425:[{dummy:0}
+,{anchor:'cvg1440',items:[{s:'3',x:'FC',z:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty) && (this.ref_packet.full === this.out_packet.full))',c:'R',p:'33.33',d:'0',F:'1'}
+,{}
+,{z:'(this.ref_packet.data_out === this.out_packet.data_out)',c:'g',r:'',i:''}
+,{z:'(this.ref_packet.empty === this.out_packet.empty)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(this.ref_packet.full === this.out_packet.full)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(this.ref_packet.data_out === this.out_packet.data_out)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(this.ref_packet.data_out === this.out_packet.data_out)_1',h1:'1',t:'c',c1:'((this.ref_packet.empty === this.out_packet.empty) && (this.ref_packet.full === this.out_packet.full))'}
+,{n:'3',z:'(this.ref_packet.empty === this.out_packet.empty)_0',h1:'0',t:'c',c1:'(this.ref_packet.data_out === this.out_packet.data_out)'}
+,{n:'4',z:'(this.ref_packet.empty === this.out_packet.empty)_1',h1:'1',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.full === this.out_packet.full))'}
+,{n:'5',z:'(this.ref_packet.full === this.out_packet.full)_0',h1:'0',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty))'}
+,{n:'6',z:'(this.ref_packet.full === this.out_packet.full)_1',h1:'1',t:'c',c1:'((this.ref_packet.data_out === this.out_packet.data_out) && (this.ref_packet.empty === this.out_packet.empty))'}
+]}
+,{anchor:'cvg1442',cr:'c',items:[{s:'3',x:'FC',z:'(write && read)',c:'G',p:'100.00',d:'0',F:'1'}
+,{}
+,{z:'write',c:'g',r:'',i:''}
+,{z:'read',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'write_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'write_1',h1:'1',t:'c',c1:'read'}
+,{n:'3',z:'read_0',h1:'1',t:'c',c1:'write'}
+,{n:'4',z:'read_1',h1:'1',t:'c',c1:'write'}
+]}
+],
+dummyEnd:0
+};
+processCondExprData(g_data);

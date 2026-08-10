@@ -1,0 +1,18 @@
+var g_data = {
+c1026:[4,'cp_rs',[],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[0,'1','346',,'auto[0]'],[0,'1','277',,'auto[1]']],[]],
+c1027:[4,'cp_we',[],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[0,'1','157',,'wr_bin0'],[0,'1','466',,'wr_bin1']],[]],
+c1028:[4,'cp_wc',[],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[0,'1','179',,'wc_bin0'],[0,'1','444',,'wc_bin1']],[]],
+c1029:[4,'cp_re',[],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[0,'1','435',,'re_bin0'],[0,'1','188',,'re_bin1']],[]],
+c1030:[4,'cp_rc',[],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[0,'1','437',,'rc_bin0'],[0,'1','186',,'rc_bin1']],[]],
+c1031:[5,'cr_wc',['cp_we','cp_wc'],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[4,'1','97',,'wr_bin0','wc_bin0'],[4,'1','82',,'wr_bin1','wc_bin0'],[4,'1','60',,'wr_bin0','wc_bin1'],[4,'1','384',,'wr_bin1','wc_bin1']],[[]]],
+c1032:[5,'cr_rc',['cp_re','cp_rc'],,'1025',1,1,'cg','1020','/test_pkg/fifo_subscriber',[[],[4,'1','362',,'re_bin0','rc_bin0'],[4,'1','75',,'re_bin1','rc_bin0'],[4,'1','73',,'re_bin0','rc_bin1'],[4,'1','113',,'re_bin1','rc_bin1']],[[]]],
+c1409:[4,'cp_rs',[],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[0,'1','346',,'auto[0]'],[0,'1','277',,'auto[1]']],[]],
+c1410:[4,'cp_we',[],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[0,'1','157',,'wr_bin0'],[0,'1','466',,'wr_bin1']],[]],
+c1411:[4,'cp_wc',[],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[0,'1','179',,'wc_bin0'],[0,'1','444',,'wc_bin1']],[]],
+c1412:[4,'cp_re',[],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[0,'1','435',,'re_bin0'],[0,'1','188',,'re_bin1']],[]],
+c1413:[4,'cp_rc',[],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[0,'1','437',,'rc_bin0'],[0,'1','186',,'rc_bin1']],[]],
+c1414:[5,'cr_wc',['cp_we','cp_wc'],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[4,'1','97',,'wr_bin0','wc_bin0'],[4,'1','82',,'wr_bin1','wc_bin0'],[4,'1','60',,'wr_bin0','wc_bin1'],[4,'1','384',,'wr_bin1','wc_bin1']],[[]]],
+c1415:[5,'cr_rc',['cp_re','cp_rc'],,'1408',1,1,'cg','1403','work.test_pkg::fifo_subscriber',[[],[4,'1','362',,'re_bin0','rc_bin0'],[4,'1','75',,'re_bin1','rc_bin0'],[4,'1','73',,'re_bin0','rc_bin1'],[4,'1','113',,'re_bin1','rc_bin1']],[[]]],
+dummyEnd:0
+};
+processCovergroupsData(g_data);
